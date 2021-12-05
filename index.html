@@ -72,6 +72,64 @@
       color: #024e76;
     }
 
+    section {
+      padding: 60px;
+    }
+
+    .hero-form {
+      border: 3px solid #024e76;
+      background-color: #fce138;
+      padding: 20px;
+      width: 500px;
+      color: #024e76;
+      position: absolute;
+      bottom: 120px;
+      right: 140px;
+    }
+
+    .hero-form h3 {
+      font-size: 24px;
+      margin: 0px;
+    }
+
+    .hero-form p {
+      margin: 5px 0 15px 0;
+    }
+
+    .form-input {
+      border: 1px solid #024e76;
+      display: block;
+      padding: 7px 15px;
+      font-size: 16px;
+      color: #024e76;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    .hero-form label {
+      margin: 0 5px;
+    }
+
+    .hero-form button {
+      color: #fce138;
+      background-color: #024e76;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    /* HERO STYLES END */
+
+    /* Hero Style Start */
+    .hero {
+      background-image: url("assets/images/hero-bg.jpg");
+      height: 600px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    
+    /* Hero Style End */
+
   </style>
   </head>
   <body>
@@ -100,22 +158,85 @@
       </ul>
     </nav>
   </header>
+  <!-- hero section -->
+  <section class="hero">
+    <div class="hero-form">
+      <h3>Get Started Today</h3>
+      <p>Fill out this form and one of trainers will schedule a consult</p>
+      <!-- Add form element -->
+      <form>
+        <label for="name">Enter full name:</label>
+        <input type="text" placeholder="Your Name" name="name" id="name" class="form-input">
+
+        <label for="email">Enter email address:</label>
+        <input type="email" placeholder="Email Address" name="email" id="email" class="form-input">
+
+        <label for="phone">Enter a phone number:</label>
+        <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input">
+       <p>
+          Have you worked out with a trainer before?
+          <input type="radio" name="trainer-confirm" id="trainer-yes" />
+          <label for="trainer-yes">Yes</label>
+          <input type="radio" name="trainer-confirm" id="trainer-no" />
+          <label for="trainer-no">No</label>
+        </p>
+        <p>
+          <label for="checkbox" >
+            I acknowledge that I am at least 18 years of age.
+          </label>
+          <input type="checkbox" name="age-confirm" id="checkbox" />
+        </p>
+        <button type="submit">
+          Get Running!
+        </button>  
+      </form>
+    </div>
+  </section>
+  <!-- end hero -->
 
   <!-- hero/jumbotron -->
   <section>
   </section>
 
   <!-- "what we do" -->
-  <section>
+  <section id="what-we-do">
     <h2>What We Do</h2>
+    <p>
+      butcher selfies chambray sahbby chic gentrify readymade yr Echo PArk XOXO Tumblr normcore Banksy direct trade Blue Bottle chillwave you probably haven't heard of them single-origin coffee Vice fanny pack fixie Odd Future Austin fingerstache pickled twee synth Wes  ANderson Thundercats viral bitters flannel meggings narwhal Marfa Schlitz sustainable Intelligentsia umami deep v craft
+    </p>
   </section>
 
   <!-- "what you do" -->
-  <section>
+  <section id="what-you-do">
     <h2>What You Do</h2>
+
+    <div>
+      <!-- inseert this img element -->
+      <img src="assets/images/step-1.svg" alt="" />
+      <h3>Step 1: Fill Out The Form ABove.</h3>
+      <p>You're already here, so why not?</p>
+    </div>
+
+    <div>
+      <img src="assets/images/step-2.svg" alt="" />
+      <h3>Step 2: COnsult With One OF Our Trainers</h3>
+      <P>Are you to build muscle, lose weight or just to feel good?</P>
+    </div>
+
+    <div>
+      <img src="assets/images/step-3.svg" alt="" />
+      <h3>Step 3: Get Running</h3>
+      <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
+    </div>
+
+    <div>
+      <img src="assets/images/step-4.svg" alt="" />
+      <h3>Step 4: See REsults</h3>
+      <p>Bi-weekly checkins with your trainer will keep you focused</p>
+    </div>
   </section>
 
-  <!-- "mee the trainers" -->
+  <!-- "meet the trainers" -->
   <section>
     <h2>Meet The Trainers</h2>
   </section>
